@@ -4,7 +4,6 @@ function Promise(executor) {
   self.onResolvedCallback = []
   self.onRejectedCallback = []
   function resolve(value) {
-    // 模拟异步
     setTimeout(() => {
       if(self.status === 'pending') {
         self.status = 'resolved'
