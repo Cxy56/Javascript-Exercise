@@ -10,7 +10,7 @@ function curry(fn, args) {
     var _args = [].slice.call(arguments)
     let newArgs = args.concat(_args)
     if(newArgs.length >= len) {
-      return fn.apply(this.newArgs)
+      return fn.apply(this, newArgs)
     } else {
       return curry.call(this, fn, newArgs)
     }
