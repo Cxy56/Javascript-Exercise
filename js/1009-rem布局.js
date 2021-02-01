@@ -7,6 +7,7 @@ function setRem () {
   rem = Math.min(docEl.clientWidth, maxClientWidth) / designWidth * 100
 
   // dpr >= 2 时候, 会有0.5px的问题 var dpr = win.devicePixelRatio || 1; 
+  const viewportSettings = `initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, viewport-fit=cover`
   const rect = docEl.getBoundingClientRect()
   const width = rect.width ? rect.width : 0
   const viewportWidth = width === docEl.clientWidth ? 'device-width' : width

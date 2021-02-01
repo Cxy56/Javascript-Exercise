@@ -63,4 +63,3 @@ let matrix1 = [[1,2,3],[4,5,6],[7,8,9]]
 let matrix2 = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
 orderMatrix(matrix1)
 orderMatrix(matrix2)
-
